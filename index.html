@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Su historia merece ser contada | Planificación funeraria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#f6f3fb; --card:#ffffff; --ink:#1b1f3b; --muted:#5a5f7d; --line:#e2dcef;
+  --night:#141a3a; --dusk:#3a2f5b; --gold:#e9b44c; --gold-ink:#1b1f3b; --rose:#c9748f; --tint:#ece6f7;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --page:#0f1330; --card:#181d42; --ink:#f3effa; --muted:#b9b6d3; --line:#2c3260; --tint:#1a1f48; color-scheme:dark;}}
+:root[data-theme="dark"]{--page:#0f1330; --card:#181d42; --ink:#f3effa; --muted:#b9b6d3; --line:#2c3260; --tint:#1a1f48; color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:400 1.125rem/1.75 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;margin:0;line-height:1.12;font-weight:500}
+p{margin:0 0 1.25rem}
+.wrap{max-width:40rem;margin:0 auto;padding:0 1.5rem}
+.wide{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+svg{display:block}
+
+/* HERO */
+.hero{position:relative;min-height:92svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:var(--ink);
+  background:radial-gradient(circle at 15% 10%,#fff6dc 0,transparent 45%),radial-gradient(circle at 90% 35%,#d6ebf6 0,transparent 55%),linear-gradient(180deg,#f9f4ea,#e6f0f3);
+  padding:calc(9rem + env(safe-area-inset-top,0px)) 0 6rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{background:radial-gradient(circle at 85% 20%,#3a3a78 0,transparent 55%),linear-gradient(180deg,#141a3a,#232a5c)}}
+:root[data-theme="dark"] .hero{background:radial-gradient(circle at 85% 20%,#3a3a78 0,transparent 55%),linear-gradient(180deg,#141a3a,#232a5c)}
+.hero .art{position:absolute;inset:0;width:100%;height:100%}
+.hero .brand{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;align-items:center;justify-content:center;gap:1rem;padding:.6rem 1.25rem;background:#141a3a;border-bottom:2px solid var(--gold)}.hero .brand img{height:3.8rem;width:auto;display:block}.bcall{color:#141a3a;background:var(--gold);font-weight:700;text-decoration:none;border-radius:3rem;padding:.55rem 1rem;font-size:.95rem;white-space:nowrap}
+.hero h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:700;max-width:14ch;animation:rise 1.4s ease both}
+.hero p.lead{font-size:1.25rem;max-width:30rem;margin:1.5rem 0 0;color:var(--muted);animation:rise 1.4s .3s ease both}
+.cue{position:absolute;left:50%;bottom:1.5rem;width:2rem;margin-left:-1rem;color:var(--ink);animation:bob 2s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(8px)}}
+.bird{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;opacity:.75;animation:fly 22s linear infinite}
+.bird.b2{animation-duration:30s;animation-delay:-9s}.bird.b3{animation-duration:26s;animation-delay:-16s}
+@keyframes fly{from{transform:translateX(-120px)}to{transform:translateX(960px)}}
+.seed{fill:#fff;stroke:#e9b44c;stroke-width:1.5;animation:drift 9s ease-in infinite}
+.seed:nth-of-type(2n){animation-delay:-3s}.seed:nth-of-type(3n){animation-delay:-6s}
+@keyframes drift{0%{transform:translate(0,40px);opacity:0}20%{opacity:.95}100%{transform:translate(40px,-160px);opacity:0}}
+.rays{animation:pulse 7s ease-in-out infinite alternate}
+@keyframes pulse{from{opacity:.55}to{opacity:1}}
+.vbox+.acts2{margin-top:2.5rem}
+.acts2{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:center}
+.wa{position:relative;width:4rem;height:4rem;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(37,211,102,.4);animation:wig 5s ease-in-out infinite}
+.wa svg{width:2.2rem;height:2.2rem;fill:#fff}
+.wa::before,.wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ring 2.4s ease-out infinite}
+.wa::after{animation-delay:1.2s}
+@keyframes ring{from{transform:scale(1);opacity:.8}to{transform:scale(1.8);opacity:0}}
+@keyframes wig{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-12deg)}90%{transform:rotate(12deg)}95%{transform:rotate(-8deg)}}
+.wa:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+
+.btn{display:inline-block;padding:1rem 1.8rem;border-radius:3rem;font-weight:700;text-decoration:none;font-size:1.05rem;border:2px solid var(--gold);transition:transform .25s,box-shadow .25s;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(233,180,76,.35)}
+.btn.main{background:var(--gold);color:var(--gold-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.small{font-size:.95rem;opacity:.85;margin-top:1.25rem}
+
+/* SECTIONS */
+section{padding:6rem 0}
+section h2{font-size:clamp(1.9rem,6vw,3rem);margin-bottom:1.5rem}
+.kicker{color:var(--muted);font-size:1.2rem}
+.center{text-align:center}
+.center .wrap{max-width:34rem}
+
+.vid{padding:5rem 0 2rem}
+.vid h2{font-size:clamp(1.7rem,5.5vw,2.6rem);text-align:center;margin-bottom:.75rem}
+.vid .kicker{text-align:center;margin-bottom:2.5rem}
+.vbox{position:relative;aspect-ratio:16/9;border-radius:1.5rem;overflow:hidden;background:linear-gradient(180deg,#141a3a 0%,#3a2f5b 55%,#c98a6a 100%);box-shadow:0 20px 60px rgba(20,26,58,.35);display:grid;place-items:center;color:#fff}
+.vbox video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.vbox .ph{text-align:center;padding:1.5rem}
+.vbox .play{width:5rem;height:5rem;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin:0 auto 1rem;box-shadow:0 0 0 12px rgba(233,180,76,.2)}
+.vbox .play svg{width:2rem;height:2rem;margin-left:.2rem}
+.vbox .ph span{display:block;opacity:.9}
+.pause{background:var(--tint)}
+.pause .ico{margin:0 auto 2rem;width:9rem;color:var(--gold)}
+.pause h2{font-style:italic}
+
+.trio{display:grid;gap:4rem;margin-top:3rem}
+.q{display:grid;gap:1.25rem;justify-items:start}
+.q .pic{width:100%;max-width:100%;aspect-ratio:3/2;border-radius:1.25rem;overflow:hidden;background:linear-gradient(160deg,#2d2858,#6b4a7a)}
+.q .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.q h3{font-size:1.5rem}
+.q p{color:var(--muted);margin:0}
+
+.vs{display:grid;gap:1.5rem;margin-top:2.5rem}
+.vs div{background:var(--card);border:1px solid var(--line);border-radius:1.25rem;padding:2rem}
+.vs h3{margin-bottom:1rem;font-size:1.4rem}
+.vs ul{list-style:none;margin:0;padding:0;display:grid;gap:.9rem;color:var(--muted)}
+.vs .yes{border-color:var(--gold);box-shadow:0 10px 40px rgba(233,180,76,.18)}
+
+.steps{display:grid;gap:3rem;margin-top:3rem}
+.step{display:flex;gap:1.5rem;align-items:flex-start}
+.step svg{flex:none;width:4.5rem;height:4.5rem;color:var(--gold);background:var(--night);border-radius:50%;padding:1rem}
+.step h3{font-size:1.5rem;margin-bottom:.4rem}
+.step p{margin:0;color:var(--muted)}
+
+.ask{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1rem}
+.ask li{padding:1.1rem 1.4rem;background:var(--card);border:1px solid var(--line);border-radius:1rem;border-left:5px solid var(--gold)}
+
+.cta{background:linear-gradient(180deg,#2d2858,#141a3a);color:#fff;position:relative;overflow:hidden}
+.cta .wrap{position:relative}
+.cta p{color:#e7e0f3}
+form{display:grid;gap:1rem;margin-top:2rem}
+label{display:grid;gap:.4rem;font-weight:500;color:#fff}
+input[type=text],input[type=tel]{font:inherit;padding:1rem 1.2rem;border-radius:.9rem;border:1.5px solid #4a4478;background:rgba(255,255,255,.08);color:#fff}
+.cta .or{margin:2rem 0 .5rem}
+.cta .links{display:flex;flex-wrap:wrap;gap:.75rem}
+
+details{border-bottom:1px solid var(--line);padding:1.25rem 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.8rem 0 0;color:var(--muted)}
+footer.foot{background:linear-gradient(180deg,#141a3a,#0b1029);color:#e7e0f3;text-align:center;padding:3.5rem 0 3rem}
+.flogo{width:min(17rem,70%);height:auto;margin:0 auto 1.5rem;display:block}
+.ft{font-family:"Fraunces",Georgia,serif;font-size:1.35rem;margin:0 0 1rem;color:#fff}
+.areas{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+.areas span{border:1.5px solid var(--gold);color:#ffe3a3;border-radius:2rem;padding:.35rem 1rem;font-weight:500}
+.ft2{margin:1.1rem 0 1.5rem;opacity:.85;font-size:1rem}
+.fcall a{display:inline-block;color:#141a3a;background:var(--gold);font-weight:700;text-decoration:none;border-radius:3rem;padding:.8rem 1.6rem;font-size:1.1rem}
+.trust{list-style:none;margin:2rem auto 0;padding:0;display:grid;gap:.6rem;max-width:22rem;text-align:left}
+.trust li{padding-left:2rem;position:relative;color:#fff}
+.trust li::before{content:"\2713";position:absolute;left:0;top:0;width:1.4rem;height:1.4rem;border-radius:50%;background:var(--gold);color:#141a3a;font-weight:700;font-size:.85rem;display:grid;place-items:center;line-height:1}
+.fmail{margin:1rem 0 0}.fmail a{color:#ffe3a3;font-size:1.1rem;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:.1rem}
+.legal{max-width:34rem;margin:2rem auto 0;font-size:.85rem;opacity:.7}
+
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.rv.on{opacity:1;transform:none}
+@media (min-width:46rem){
+  .trio{grid-template-columns:repeat(3,1fr);gap:2rem}
+  .vs{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr);gap:2rem}
+  .step{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero h1,.hero p.lead,.bird,.seed,.rays,.cue,.wa,.wa::before,.wa::after{animation:none}.seed{opacity:.8}
+  .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.btn{transition:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="tree" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M50 92V50M50 70C40 66 34 60 30 52M50 62c8-4 14-10 18-18M50 50V36"/></g><g fill="currentColor"><circle cx="50" cy="28" r="16"/><circle cx="30" cy="42" r="12"/><circle cx="70" cy="40" r="13"/><circle cx="40" cy="22" r="10" opacity=".7"/></g></symbol>
+    <symbol id="candle" viewBox="0 0 100 100"><path d="M50 10c8 10 10 16 0 24-10-8-8-14 0-24Z" fill="currentColor"/><rect x="40" y="38" width="20" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M28 88h44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="bulb" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M36 62c-8-6-12-14-12-22a26 26 0 1 1 52 0c0 8-4 16-12 22v8H36z"/><path d="M40 80h20M44 88h12M50 4v6M16 20l4 4M84 20l-4 4"/></g></symbol>
+    <symbol id="glass" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="42" cy="42" r="24"/><path d="M60 60l26 26"/></g></symbol>
+    <symbol id="leaf" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 80C16 40 40 16 84 16c0 44-24 68-60 64"/><path d="M20 80C34 58 50 42 70 30"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="brand"><img src="/_blob/68d914774171a9fcb68da46057002630" alt="Aiviralworldwide, Prever es amar"></div>
+  <svg class="art" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs><linearGradient id="ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4c56a" stop-opacity=".6"/><stop offset="1" stop-color="#f4c56a" stop-opacity="0"/></linearGradient></defs>
+    <g class="rays"><polygon points="620,-20 740,-20 500,620 280,620" fill="url(#ray)"/><polygon points="740,-20 830,-20 800,620 640,620" fill="url(#ray)" opacity=".6"/></g>
+    <g transform="translate(-10 410)"><path d="M0 190C90 150 170 80 250 0" fill="none" stroke="#6f967f" stroke-width="3"/><g fill="#8fb39b"><ellipse cx="40" cy="150" rx="24" ry="7" transform="rotate(-30 40 150)"/><ellipse cx="60" cy="126" rx="24" ry="7" transform="rotate(-60 60 126)"/><ellipse cx="90" cy="104" rx="24" ry="7" transform="rotate(-25 90 104)"/><ellipse cx="110" cy="80" rx="24" ry="7" transform="rotate(-65 110 80)"/><ellipse cx="145" cy="66" rx="24" ry="7" transform="rotate(-20 145 66)"/><ellipse cx="160" cy="40" rx="24" ry="7" transform="rotate(-60 160 40)"/><ellipse cx="196" cy="34" rx="24" ry="7" transform="rotate(-15 196 34)"/><ellipse cx="214" cy="12" rx="24" ry="7" transform="rotate(-55 214 12)"/><ellipse cx="30" cy="168" rx="24" ry="7" transform="rotate(25 30 168)"/><ellipse cx="78" cy="138" rx="24" ry="7" transform="rotate(30 78 138)"/><ellipse cx="128" cy="92" rx="24" ry="7" transform="rotate(25 128 92)"/><ellipse cx="178" cy="52" rx="24" ry="7" transform="rotate(30 178 52)"/></g></g>
+    <g transform="translate(560 430) scale(-1 1)"><path d="M0 170C80 140 150 80 210 10" fill="none" stroke="#6f967f" stroke-width="3" opacity=".7"/><g fill="#8fb39b" opacity=".7"><ellipse cx="40" cy="150" rx="20" ry="7" transform="rotate(-30 40 150)"/><ellipse cx="60" cy="126" rx="20" ry="7" transform="rotate(-60 60 126)"/><ellipse cx="90" cy="104" rx="20" ry="7" transform="rotate(-25 90 104)"/><ellipse cx="110" cy="80" rx="20" ry="7" transform="rotate(-65 110 80)"/><ellipse cx="145" cy="66" rx="20" ry="7" transform="rotate(-20 145 66)"/><ellipse cx="160" cy="40" rx="20" ry="7" transform="rotate(-60 160 40)"/><ellipse cx="196" cy="34" rx="20" ry="7" transform="rotate(-15 196 34)"/><ellipse cx="214" cy="12" rx="20" ry="7" transform="rotate(-55 214 12)"/><ellipse cx="30" cy="168" rx="20" ry="7" transform="rotate(25 30 168)"/><ellipse cx="78" cy="138" rx="20" ry="7" transform="rotate(30 78 138)"/><ellipse cx="128" cy="92" rx="20" ry="7" transform="rotate(25 128 92)"/><ellipse cx="178" cy="52" rx="20" ry="7" transform="rotate(30 178 52)"/></g></g>
+    <g transform="translate(0 110)"><path class="bird" d="M0 12Q12-6 24 10Q36-6 48 12"/></g>
+    <g transform="translate(0 210) scale(.7)"><path class="bird b2" d="M0 12Q12-6 24 10Q36-6 48 12"/></g>
+    <g transform="translate(0 160) scale(.5)"><path class="bird b3" d="M0 12Q12-6 24 10Q36-6 48 12"/></g>
+    <circle class="seed" cx="520" cy="500" r="4"/><circle class="seed" cx="600" cy="520" r="3"/><circle class="seed" cx="680" cy="480" r="4"/><circle class="seed" cx="440" cy="530" r="3"/><circle class="seed" cx="740" cy="540" r="3"/><circle class="seed" cx="360" cy="510" r="4"/>
+  </svg>
+  <div class="wide" style="position:relative">
+    <h1>Su historia merece ser contada a su manera.</h1>
+    <p class="lead">Planificar hoy es un regalo para su familia: menos decisiones difíciles mañana, más tiempo para recordar.</p>
+  </div>
+  <svg class="cue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+</header>
+
+<main>
+<section class="vid rv">
+  <div class="wide">
+    <h2>Conozca cómo funciona, en 90 segundos</h2>
+    <p class="kicker">Véalo a su ritmo, cuando quiera.</p>
+    <div class="vbox" id="vbox">
+      <div class="ph"><div class="play"><svg viewBox="0 0 24 24" fill="#1b1f3b" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></div><span>Video informativo</span><span>Próximamente</span></div>
+    </div>
+    <div class="acts2">
+      <a class="btn main" data-link="booking" href="#reservar">Agende su llamada gratis</a>
+      
+      <a class="wa" data-link="whatsapp" href="#reservar" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm4.9 14.2c-.2.6-1.2 1.1-1.7 1.2-.4.1-1 .1-1.6-.1-3-1.1-4.900-4-5.100-4.200-.1-.2-1.200-1.600-1.200-3s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.300 0 .500l-.4.600c-.1.200-.3.300-.1.600.7 1.100 1.500 1.800 2.600 2.300.3.100.4.100.6-.1l.7-.9c.2-.2.400-.2.600-.1l1.800.9c.2.100.4.200.4.300.1.200.1.800-.1 1.300z"/></svg></a>
+    </div>
+    <p class="small center" style="color:var(--muted)">Gratis, sin compromiso y sin información financiera.</p>
+  </div>
+</section>
+
+<section class="pause center rv">
+  <div class="wrap">
+    <svg class="ico" viewBox="0 0 100 100" aria-hidden="true"><use href="#candle"/></svg>
+    <h2>Respire un momento.</h2>
+    <p class="kicker">¿Cómo le gustaría que lo recuerden las personas que ama?</p>
+    <p>Esta es la pregunta que da inicio a todo. No hay respuestas incorrectas.</p>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="wide">
+    <div class="wrap" style="padding:0"><h2>Tres cosas para pensar con calma</h2><p class="kicker">No tiene que responderlas hoy. Solo déjelas llegar.</p></div>
+    <div class="trio">
+      <div class="q"><div class="pic"><img src="/_blob/5ce28962e8a1c3462a9907e3c8e983ee" alt="Familia caminando junta en un parque al atardecer" loading="lazy"></div><h3>¿Quién quiere que esté con usted?</h3><p>Las personas, los lugares y la música que dicen quién fue.</p></div>
+      <div class="q"><div class="pic"><img src="/_blob/263b0cf75ccbaf3bb3c0b0b50a73a516" alt="Asesora mostrando opciones en una tablet a una pareja de adultos mayores" loading="lazy"></div><h3>¿Qué camino quiere dejar claro?</h3><p>Entierro, cremación o una ceremonia diferente. Usted elige.</p></div>
+      <div class="q"><div class="pic"><img src="/_blob/7e98a41d9ef0108bb51deb1be8e5941e" alt="Hombre mayor tomando café frente a la ventana al amanecer" loading="lazy"></div><h3>¿Qué carga quiere evitarle a su familia?</h3><p>Decisiones, gastos inesperados y dudas en medio del duelo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pause rv">
+  <div class="wide">
+    <div class="wrap" style="padding:0"><h2>Dos caminos, una diferencia</h2></div>
+    <div class="vs">
+      <div><h3>Sin un plan</h3><ul><li>Su familia decide todo en pocos días.</li><li>Nadie sabe con seguridad qué hubiera querido usted.</li><li>Los gastos llegan de golpe.</li></ul></div>
+      <div class="yes"><h3>Con un plan</h3><ul><li>Sus deseos quedan por escrito.</li><li>Su familia solo tiene que acompañarse.</li><li>Usted decide cuánto gastar y cómo pagar.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="wide">
+    <div class="wrap" style="padding:0"><h2>Así de sencillo</h2><p class="kicker">Tres pasos, a su ritmo.</p></div>
+    <div class="steps">
+      <div class="step"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#bulb"/></svg><div><h3>Reflexionar</h3><p>Piense cómo quiere que se recuerde su vida y qué detalles especiales incluir.</p></div></div>
+      <div class="step"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#glass"/></svg><div><h3>Revisar</h3><p>Un representante le explica las opciones, sin estrés emocional.</p></div></div>
+      <div class="step"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#leaf"/></svg><div><h3>Relajarse</h3><p>Recibe una declaración por escrito para compartir con su familia.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="pause rv">
+  <div class="wrap">
+    <h2>¿Pagar por adelantado?</h2>
+    <p class="kicker">Los precios de los funerales suben con el tiempo. Pagar hoy puede proteger a su familia de esa carga.</p>
+    <p>Pero la decisión debe ser tranquila. Antes de firmar cualquier plan, pregunte:</p>
+    <ul class="ask">
+      <li>¿Dónde se guarda mi dinero y quién lo protege?</li>
+      <li>¿Puedo cancelar y recibir reembolso?</li>
+      <li>¿Sigue válido si me mudo de ciudad o estado?</li>
+      <li>¿Qué está incluido y qué podría costar extra?</li>
+      <li>¿Recibiré todo por escrito, con copia para mi familia?</li>
+    </ul>
+    <p style="margin-top:2rem;color:var(--muted)">Usted tiene derecho a una lista de precios por escrito antes de decidir. Si alguien le presiona, tome su tiempo.</p>
+  </div>
+</section>
+
+<section class="cta" id="reservar">
+  <div class="wrap">
+    <svg style="width:5rem;color:var(--gold);margin-bottom:1.5rem" viewBox="0 0 100 100" aria-hidden="true"><use href="#tree"/></svg>
+    <h2>Prefiero que me escriban</h2>
+    <p>Déjenos su nombre y teléfono y le respondemos.</p>
+    <form id="f" novalidate>
+      <label>Nombre<input type="text" name="n" autocomplete="given-name" required></label>
+      <label>Teléfono<input type="tel" name="t" autocomplete="tel" inputmode="tel" required></label>
+      <button class="btn main" type="submit">Quiero que me contacten</button>
+      <p class="small" style="margin:0">Se abrirá WhatsApp con su mensaje listo. Solo recibirá textos si usted lo autoriza.</p>
+      <p id="fm" class="small" style="margin:0"></p>
+    </form>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Puedo planificar para un familiar?</summary><p>Sí. Muchas familias lo hacen juntas.</p></details>
+    <details><summary>¿Qué zonas atienden?</summary><p>Covina, La Puente, El Monte, Arcadia, Duarte, Pasadena y áreas cercanas, en persona, por teléfono o por videollamada.</p></details>
+    <details
