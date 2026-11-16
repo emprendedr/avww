@@ -268,4 +268,49 @@ footer.foot{background:linear-gradient(180deg,#141a3a,#0b1029);color:#e7e0f3;tex
     <h2>Preguntas frecuentes</h2>
     <details><summary>¿Puedo planificar para un familiar?</summary><p>Sí. Muchas familias lo hacen juntas.</p></details>
     <details><summary>¿Qué zonas atienden?</summary><p>Covina, La Puente, El Monte, Arcadia, Duarte, Pasadena y áreas cercanas, en persona, por teléfono o por videollamada.</p></details>
-    <details
+    <details><summary>¿Atienden en inglés?</summary><p>Sí, en español e inglés.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wide">
+    <img class="flogo" src="/_blob/68d914774171a9fcb68da46057002630" alt="Aiviralworldwide, Prever es amar">
+    <p class="ft">Acompañando a las familias en los condados de</p>
+    <div class="areas"><span>Los Ángeles</span><span>Orange</span><span>San Bernardino</span><span>Riverside</span></div>
+    <p class="ft2">Atención en persona, por teléfono o por videollamada.</p>
+    <p class="ft" style="margin-top:2rem">Contáctenos</p>
+    <p class="fcall"><a data-link="phone" href="#reservar">&#128222; Llamar al (323) 285-0508</a></p>
+    <p class="fmail"><a href="mailto:Aiviralworldwide@gmail.com">Aiviralworldwide@gmail.com</a></p>
+    
+    <ul class="trust"><li>Atención personal en español e inglés</li><li>Consulta gratis y sin presión</li><li>Su información es confidencial</li></ul>
+    <p class="legal">© 2026 Aiviralworldwide. Orientación informativa sobre planificación anticipada.</p>
+  </div>
+</footer>
+
+<script>
+// EDITE ESTOS TRES DATOS
+var CFG={booking:"https://aiviralworldwide1.zohobookings.com/#/5018794000000038045",whatsapp:"13232850508",phone:"+13232850508",video:"/_blob/55089b62f0a789b6d8c03e87aefa9daa"};
+document.querySelectorAll("[data-link]").forEach(function(a){
+  var k=a.getAttribute("data-link");
+  if(k==="booking")a.href=CFG.booking;
+  if(k==="whatsapp")a.href="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent("Hola, quiero información.");
+  if(k==="phone")a.href="tel:"+CFG.phone;
+});
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();var d=new FormData(e.target);var m0=document.getElementById("fm");var nm=String(d.get("n")||"").trim(),tl=String(d.get("t")||"").replace(/\D/g,"");if(nm.length<2||tl.length<10){m0.textContent="Escriba su nombre y un teléfono de 10 dígitos para continuar.";return}
+  var u="https://wa.me/"+CFG.whatsapp+"?text="+encodeURIComponent("Hola, soy "+d.get("n")+". Tel: "+d.get("t")+". Quiero información.");var a=document.createElement("a");a.href=u;a.target="_blank";a.rel="noopener";document.body.appendChild(a);a.click();a.remove();var m=document.getElementById("fm");if(m)m.textContent="Gracias. Si no se abrió WhatsApp, toque el ícono verde de arriba.";
+});
+if(CFG.video){var vb=document.getElementById("vbox");vb.innerHTML="";var v=document.createElement("video");v.src=CFG.video;v.controls=true;v.playsInline=true;v.preload="metadata";vb.appendChild(v)}
+function fb(t){var x=document.createElement("textarea");x.value=t;x.style.position="fixed";x.style.opacity="0";document.body.appendChild(x);x.select();try{document.execCommand("copy")}catch(e){}x.remove()}
+function cp(t,msg){var done=function(){var m=document.getElementById("cpm");if(m){m.textContent=msg;m.style.color="#ffe3a3"}};if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fb(t);done()})}else{fb(t);done()}}
+
+
+var els=document.querySelectorAll(".rv"),reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if("IntersectionObserver" in window&&!reduce){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}})},{threshold:.1});
+  els.forEach(function(el){io.observe(el)});
+}else{els.forEach(function(el){el.classList.add("on")})}
+</script>
+</body>
+</html>
